@@ -1,4 +1,11 @@
 from datetime import datetime
 
-current_datetime = datetime.now()
-print(current_datetime) # 2020-10-09 22:13:35.053819
+right_now = datetime.now()
+print(f' ПОТОЧНИЙ РІК І ЧАС: {right_now}')
+print(f'ПОТОЧНИЙ РІК: {right_now.year}')
+print(f'ПОТОЧНИЙ МІСЯЦЬ: {right_now.month}')
+print(f'ПОТОЧНИЙ ДЕНЬ: {right_now.day}')
+print(f'ПОТОЧНИЙ  ЧАС: {right_now.hour}')
+print(f'ПОТОЧНІ МИНУТИ: {right_now.minute}')
+print(f'ПОТОЧНИЙ СЕКУНДИ: {right_now.second}')
+print(f'ПОТОЧНИЙ МІКРОСЕКУНДИ: {right_now.microsecond}')
