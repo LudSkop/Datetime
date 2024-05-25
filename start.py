@@ -10,3 +10,8 @@ temp_replace = d.replace(year=2024, month=8, day=16, hour=15, minute=25)
 print(temp_replace)
 
 # метод replace() повертає  новий об'єкт datetime зі зміненими   атрибутами.
+
+
+str_temp_replace = temp_replace.strftime('%y/%d/%m, %H:%M:%S')
+print(str_temp_replace)
+# Метод strftime() переводить об'єкт datetime у строку.
