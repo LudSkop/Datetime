@@ -7,8 +7,8 @@ def get_days_from_today(date: str) -> int:
     """
     right_now = datetime.today()
     date = datetime.strptime(date, '%Y-%m-%d')
-    delta = right_now - date
-    return delta.days
+    difference = right_now - date
+    return difference.days
 
 
 if __name__ == "__main__":
