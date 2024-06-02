@@ -5,17 +5,16 @@ def total_salary(name: Path):
     try:
         with open(name, mode='r') as file:
             total = 0
-            avarage = 0
-            caunter = 0
+            counter = 0
             for element in file:
                 fam, salary = element.split(sep=',')
                 salary = salary.strip()
                 total += int(salary)
-                caunter += 1
-            avarage = total / caunter
-        return total, avarage
+                counter += 1
+            average = total / counter
+        return total, average
     except FileNotFoundError:
-        print(f' не існує файла')
+        print(f'Такого файла не існує')
 
 if __name__ == '__main__':
     path = Path('files/some.txtyg')
